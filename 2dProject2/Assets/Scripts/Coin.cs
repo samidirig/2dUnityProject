@@ -11,10 +11,10 @@ public class Coin : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Collectible"))
         {
-            Debug.Log(count);
+            //Debug.Log(count);
             count++;
             AudioSource.PlayClipAtPoint(clickSound, other.transform.position);
-            //Destroy(other.gameObject);
+            Destroy(other.gameObject);
         }   
     }
 }
